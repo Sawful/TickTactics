@@ -1,0 +1,301 @@
+[gd_scene load_steps=36 format=3 uid="uid://c2630g8o2dj4b"]
+
+[ext_resource type="Texture2D" uid="uid://d211g56lmujud" path="res://Sprites/Enemies/FlyingEye/Attack.png" id="1_dplti"]
+[ext_resource type="Texture2D" uid="uid://4l6yw5kjkbfx" path="res://Sprites/Enemies/FlyingEye/Death.png" id="2_2erc2"]
+[ext_resource type="Texture2D" uid="uid://dh3kp60k1jibr" path="res://Sprites/Enemies/FlyingEye/Flight.png" id="3_78lr4"]
+[ext_resource type="Texture2D" uid="uid://cl8qariib0bsu" path="res://Sprites/Enemies/FlyingEye/TakeHit.png" id="4_lr2mi"]
+[ext_resource type="Script" path="res://Script/Enemy.cs" id="5_ocqyq"]
+[ext_resource type="AudioStream" uid="uid://b7ljqdxnq3pic" path="res://Sound/EyeMunch.mp3" id="6_me7j2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fiakr"]
+atlas = ExtResource("1_dplti")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b14ki"]
+atlas = ExtResource("1_dplti")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_23hr6"]
+atlas = ExtResource("1_dplti")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u7mcq"]
+atlas = ExtResource("1_dplti")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwdc7"]
+atlas = ExtResource("1_dplti")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ln01n"]
+atlas = ExtResource("1_dplti")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n0rnj"]
+atlas = ExtResource("1_dplti")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ablrm"]
+atlas = ExtResource("1_dplti")
+region = Rect2(1050, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gt54k"]
+atlas = ExtResource("2_2erc2")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ssnwr"]
+atlas = ExtResource("2_2erc2")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3ja1e"]
+atlas = ExtResource("2_2erc2")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o66wr"]
+atlas = ExtResource("2_2erc2")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jrr36"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_atq2p"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gtp4c"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ctqyy"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2qxcj"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(600, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fbf68"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(750, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybclj"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(900, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_77kb5"]
+atlas = ExtResource("3_78lr4")
+region = Rect2(1050, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q35su"]
+atlas = ExtResource("4_lr2mi")
+region = Rect2(0, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hrtmr"]
+atlas = ExtResource("4_lr2mi")
+region = Rect2(150, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hsbhu"]
+atlas = ExtResource("4_lr2mi")
+region = Rect2(300, 0, 150, 150)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yms8n"]
+atlas = ExtResource("4_lr2mi")
+region = Rect2(450, 0, 150, 150)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3ft8g"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fiakr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b14ki")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_23hr6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u7mcq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wwdc7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ln01n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n0rnj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ablrm")
+}],
+"loop": false,
+"name": &"Attack",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gt54k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ssnwr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3ja1e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o66wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o66wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o66wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o66wr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o66wr")
+}],
+"loop": false,
+"name": &"Death",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jrr36")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_atq2p")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gtp4c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ctqyy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2qxcj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fbf68")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybclj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_77kb5")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q35su")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hrtmr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hsbhu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yms8n")
+}],
+"loop": false,
+"name": &"TakeHit",
+"speed": 8.0
+}]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fo5ae"]
+lifetime_randomness = 0.2
+emission_shape = 6
+emission_ring_axis = Vector3(0, 0, 1)
+emission_ring_height = 4.0
+emission_ring_radius = 4.0
+emission_ring_inner_radius = 0.0
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 60.0
+gravity = Vector3(0, 90, 0)
+initial_velocity_min = -40.0
+initial_velocity_max = 60.0
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+damping_min = 32.725
+damping_max = 32.725
+scale_min = 2.0
+scale_max = 2.0
+
+[sub_resource type="Animation" id="Animation_2nanp"]
+resource_name = "DeathFade"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1s1pu"]
+resource_name = "TakeHit"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.3, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(4, -26), Vector2(8, -26), Vector2(0, -26), Vector2(4, -26)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_skfgm"]
+_data = {
+"DeathFade": SubResource("Animation_2nanp"),
+"TakeHit": SubResource("Animation_1s1pu")
+}
+
+[node name="FlyingEye" type="AnimatedSprite2D"]
+position = Vector2(0, 42)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_3ft8g")
+animation = &"Idle"
+autoplay = "Idle"
+offset = Vector2(4, -26)
+flip_h = true
+script = ExtResource("5_ocqyq")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_me7j2")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+modulate = Color(0.827451, 0, 0, 1)
+position = Vector2(-2, -20)
+emitting = false
+amount = 64
+process_material = SubResource("ParticleProcessMaterial_fo5ae")
+lifetime = 0.8
+one_shot = true
+explosiveness = 0.7
+trail_enabled = true
+trail_lifetime = 0.05
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_skfgm")
+}
+
+[connection signal="animation_changed" from="." to="." method="_on_animation_changed"]
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
